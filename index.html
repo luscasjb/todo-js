@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List - Post-it</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <input
+        maxlength="50"
+        type="text"
+        id="task-input"
+        placeholder="Add a new task"
+      />
+      <button id="add-task-btn" onclick="addTask()">Add Task</button>
+      <div id="task-board" class="task-board"></div>
+      <div id="signature">L.J.B.</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #ff9966, #ffcc33);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0.5em 0 0.5em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-input-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Campo de input */
+#task-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff6600;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Botão de adicionar */
+#add-task-btn {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-task-btn:hover {
+  background-color: #cc5500;
+}
+
+/* Quadro das tarefas */
+#task-board {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.task {
+  width: 150px;
+  height: 150px;
+  background-color: #ffd966;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+}
+
+.task p {
+  flex: 1;
+  word-break: break-word;
+  margin: 10px;
+}
+
+.task .buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* Botão de deletar */
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Botão de concluir */
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.complete-btn:hover {
+  background-color: #2e7d32;
+}
+
+/* Efeito quando a tarefa é concluída */
+.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Assinatura no canto inferior direito */
+#signature {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 1px;
+}
