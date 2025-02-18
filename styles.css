@@ -11,12 +11,16 @@
   max-width: 600px;
 }
 
+/* Estilização geral da página */
 body {
   font-family: "Arial", sans-serif;
-  background: linear-gradient(to right, #ff9966, #ffcc33);
-  text-align: center;
+  background: linear-gradient(to right, #ffcc33, #ff9966);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
 }
 
 /* Título principal */
@@ -24,14 +28,26 @@ h1 {
   font-size: 2.5rem;
   color: #333;
   margin: 0.5em 0 0.5em 0;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
+/* Container do input e botão */
 .task-input-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center; /* Centraliza o input e o botão */
+  align-items: center;
+}
+
+/* Quadro das tarefas */
+#task-board {
+  width: 80%;
   margin: 20px auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 /* Campo de input */
@@ -62,15 +78,6 @@ h1 {
   background-color: #cc5500;
 }
 
-/* Quadro das tarefas */
-#task-board {
-  width: 80%;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .task {
   width: 150px;
   height: 150px;
@@ -86,6 +93,8 @@ h1 {
   text-align: center;
   font-size: 1rem;
   position: relative;
+  justify-content: space-between;
+  margin: 5px; /* Adicionando um espaçamento entre os post-its */
 }
 
 .task p {
